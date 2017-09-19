@@ -51,7 +51,7 @@ public class DietHopperMod {
 	}
 
 	@SuppressWarnings({"unused", "WeakerAccess"})
-	public static RayTraceResult collisionRayTrace(IBlockState blockState, World worldIn, BlockPos pos, Vec3d start, Vec3d end) {
+	public static RayTraceResult collisionRayTraceHook(IBlockState blockState, World worldIn, BlockPos pos, Vec3d start, Vec3d end) {
 		return bounds.get(blockState.getValue(BlockHopper.FACING)).stream()
 				.map(bb -> rayTrace(pos, start, end, bb))
 				.filter(Objects::nonNull)

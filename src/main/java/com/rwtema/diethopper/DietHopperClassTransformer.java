@@ -19,7 +19,7 @@ public class DietHopperClassTransformer implements IClassTransformer {
 			return bytes;
 		}
 
-		DietHopperCoreMod.logger.trace("Begin transforming hopper");
+		DietHopperCoreMod.logger.info("Adding hopper collision ray trace hook method.");
 
 		ClassNode classNode = new ClassNode();
 		ClassReader classReader = new ClassReader(bytes);
@@ -41,8 +41,8 @@ public class DietHopperClassTransformer implements IClassTransformer {
 		}
 		methodVisitor.visitMethodInsn(
 				Opcodes.INVOKESTATIC,
-				"com/rwtema/diethopper/HopperDietMod",
-				"collisionRayTrace",
+				"com/rwtema/diethopper/DietHopperMod",
+				"collisionRayTraceHook",
 				"(Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Vec3d;Lnet/minecraft/util/math/Vec3d;)Lnet/minecraft/util/math/RayTraceResult;"
 				, false
 		);
