@@ -16,7 +16,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@Mod(modid = DietHopperMod.MODID, version = DietHopperMod.VERSION)
+@Mod(modid = DietHopperMod.MODID, version = DietHopperMod.VERSION, acceptedMinecraftVersions = "[1.10.2,)")
 public class DietHopperMod {
 	static final String MODID = "diethopper";
 	static final String VERSION = "1.0";
