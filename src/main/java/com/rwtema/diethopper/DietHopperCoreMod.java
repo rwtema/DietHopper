@@ -9,7 +9,7 @@ import java.util.Map;
 @IFMLLoadingPlugin.TransformerExclusions(value = {"com.rwtema.diethopper.", "com.rwtema.diethopper.DietHopperCoreMod"})
 @IFMLLoadingPlugin.SortingIndex(Integer.MAX_VALUE)
 public class DietHopperCoreMod implements IFMLLoadingPlugin {
-	public static final Logger logger = LogManager.getLogger("DietHopperCoreMod");
+	static final Logger logger = LogManager.getLogger("DietHopperCoreMod");
 
 
 	public DietHopperCoreMod() {

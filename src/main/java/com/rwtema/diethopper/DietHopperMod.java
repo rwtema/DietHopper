@@ -10,8 +10,6 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import javax.annotation.Nullable;
 import java.util.*;
@@ -20,8 +18,8 @@ import java.util.stream.Stream;
 
 @Mod(modid = DietHopperMod.MODID, version = DietHopperMod.VERSION)
 public class DietHopperMod {
-	public static final String MODID = "diethopper";
-	public static final String VERSION = "1.0";
+	static final String MODID = "diethopper";
+	static final String VERSION = "1.0";
 
 	private static final EnumMap<EnumFacing, List<AxisAlignedBB>> bounds;
 
