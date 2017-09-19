@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Map;
 
-@IFMLLoadingPlugin.TransformerExclusions(value = {"com.rwtema.hexeresy.", "com.rwtema.hexeresy.HexRenderingCoreMod"})
+@IFMLLoadingPlugin.TransformerExclusions(value = {"com.rwtema.diethopper.", "com.rwtema.diethopper.DietHopperCoreMod"})
 @IFMLLoadingPlugin.SortingIndex(Integer.MAX_VALUE)
 public class DietHopperCoreMod implements IFMLLoadingPlugin {
 	public static final Logger logger = LogManager.getLogger("DietHopperCoreMod");

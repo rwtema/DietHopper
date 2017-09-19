@@ -30,7 +30,7 @@ public class DietHopperClassTransformer implements IClassTransformer {
 				.map(srgNames::get)
 				.filter(Objects::nonNull)
 				.findAny()
-				.orElseThrow(()->new RuntimeException("Unable to find proper method name."));
+				.orElseThrow(() -> new RuntimeException("Unable to find proper method name."));
 
 		MethodVisitor methodVisitor = classNode.visitMethod(0x1, methodName, "(Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Vec3d;Lnet/minecraft/util/math/Vec3d;)Lnet/minecraft/util/math/RayTraceResult;", null, null);
 		Label l0 = new Label();
